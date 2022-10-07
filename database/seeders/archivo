@@ -1,0 +1,45 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use App\Models\Empleado;
+use App\Models\User;
+
+class EmpleadoSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $empleado = new Empleado();
+        $empleado->name = 'pedro';
+        $empleado->ci = '7874848';
+        $empleado->foto = 'https://1.bp.blogspot.com/-gipW_ZlhsCQ/XM_cSOgbh1I/AAAAAAAAPFA/FKyxhdr9sasH7Y4MI02AYsErdUsLj071gCK4BGAYYCw/s113/bloger.png';
+        $empleado->genero = 'Masculino';
+        $empleado->contacto = '713000878';
+        $empleado->fnacimiento = '25';
+        $empleado->direccion = 'Av. Lujan, C/9';
+        $empleado->email = 'ad@gmai.com';
+        $empleado->estado = '1';
+        $empleado->id_especialidad = 1;
+        $empleado->save();
+
+
+        $empleado = new Empleado();
+        $empleado->name = 'marco';
+        $empleado->ci = '343454';
+        $empleado->foto = 'https://1.bp.blogspot.com/-gipW_ZlhsCQ/XM_cSOgbh1I/AAAAAAAAPFA/FKyxhdr9sasH7Y4MI02AYsErdUsLj071gCK4BGAYYCw/s113/bloger.png';
+        $empleado->genero = 'Masculino';
+        $empleado->contacto = '713000878';
+        $empleado->fnacimiento = '25';
+        $empleado->direccion = 'Av. Lujan, C/9';
+        $empleado->email = 'ssad@gmai.com';
+        $empleado->estado = '0';
+        $empleado->id_especialidad = 1;
+        $empleado->save();
+    }
+}
